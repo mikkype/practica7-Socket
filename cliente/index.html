@@ -1,16 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <title>My Aplicación con Sockets</title>
     <script src="/socket.io/socket.io.js"></script>
     <script src="main.js"></script>
-  </head>
-  <body>
+</head>
+<body>
     <h1>My App</h1><span>(con node y socket)</span>
+    <h1>CHAT ROOM</h1>
+    <div id="usuarios"></div>
+    <div id="mensajes"></div>
+    <div id="mensajesPrivados"></div>
+    <input type="text" id="nombreUsuario" placeholder="Ingresa tu nombre de usuario" />
+    <input type="text" id="mensaje" placeholder="Escribe tu mensaje" />
 
-    <div id="message"></div>
+    <input type="text" id="receptor" placeholder="Ingresa el nombre del receptor" />
+
+    <button onclick="enviarMensaje()">Enviar</button>
+    <button onclick="enviarMensajePrivado()">Enviar mensaje privado</button>
 
 
-  </body>
+
+
+</body>
 </html>
